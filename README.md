@@ -92,6 +92,18 @@ For larger or more time-intensive changes, you're welcome to outline your ideas 
 
 _When all the behaviour is implemented, feel free to add some observations or conclusions you like to share in the section_
 
+I considered adding Redis caching to speed up API responses further, but given the size of this app, it would introduce unnecessary overhead for the team to maintain. The current solution performs well without it.
+
+I used TanStack Router for the first time—-probably not the best time to pick up a new tech, but I really enjoyed working with it. The type safety and DX are excellent, making routing much more structured and reliable.
+
+If I were to revisit this project, I would:
+  - Switch to a SQL-based database and use an ORM like Drizzle or Prisma for better type safety and schema management.
+  - Refactor some of the duplicated React code across different pages into reusable components.
+  - Add tests to improve reliability and catch edge cases.
+  - Implement Swagger documentation to provide clear API contracts.
+
+If I had complete flexibility in the tech stack, I would probably have used Next.js instead of Express + React, as it provides a full-stack solution with API routes, SSR/SSG, and a great developer experience. If needed, a NestJS backend could be introduced for more complex API logic.
+
 ### Database structure
 
 #### Hotels Collection
